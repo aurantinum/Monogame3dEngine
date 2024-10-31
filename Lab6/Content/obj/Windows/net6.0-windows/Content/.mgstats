@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab6/Content/Font.spritefont","C:/Users/magui/source/repos/CPI3112024/Lab6/Content/bin/Windows/Content/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1790915
+"C:/Users/magui/source/repos/CPI3112024/Lab6/Content/Sphere.FBX","C:/Users/magui/source/repos/CPI3112024/Lab6/Content/bin/Windows/Content/Sphere.xnb","ModelProcessor","ModelContent",39360,24315,0.2189214

@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab5/Content/SimpleShading.fx","C:/Users/magui/source/repos/CPI3112024/Lab5/Content/bin/Windows/Content/SimpleShading.xnb","EffectProcessor","CompiledEffectContent",6194,6891,0.3410452
+"C:/Users/magui/source/repos/CPI3112024/Lab5/Content/Square.png","C:/Users/magui/source/repos/CPI3112024/Lab5/Content/bin/Windows/Content/Square.xnb","TextureProcessor","Texture2DContent",213,4181,0.0347607
+"C:/Users/magui/source/repos/CPI3112024/Lab5/Content/Torus.fbx","C:/Users/magui/source/repos/CPI3112024/Lab5/Content/bin/Windows/Content/Torus.xnb","ModelProcessor","ModelContent",27936,14521,0.0732914

@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab3/Content/Font.spritefont","C:/Users/magui/source/repos/CPI3112024/Lab3/Content/bin/Windows/Content/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1892647
+"C:/Users/magui/source/repos/CPI3112024/Lab3/Content/Torus.fbx","C:/Users/magui/source/repos/CPI3112024/Lab3/Content/bin/Windows/Content/Torus.xnb","ModelProcessor","ModelContent",27936,14521,0.1900017

@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\magui\\source\\repos\\CPI3112024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ai\\astarnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ai\\astarnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ai\\simpleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ai\\simpleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ai\\astarsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ai\\astarsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}|Lab9\\Lab9.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab9\\lab9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}|Lab9\\Lab9.csproj|solutionrelative:lab9\\lab9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{584AE3EB-BA1D-46CD-B3DD-A740C0CEA2A9}|Lab7\\Lab7.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab7\\lab7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{584AE3EB-BA1D-46CD-B3DD-A740C0CEA2A9}|Lab7\\Lab7.csproj|solutionrelative:lab7\\lab7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC93B58-FB0E-4218-B7C4-0F9C559831A5}|Lab8\\Lab8.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab8\\lab8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC93B58-FB0E-4218-B7C4-0F9C559831A5}|Lab8\\Lab8.csproj|solutionrelative:lab8\\lab8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Lab8.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab8\\Lab8.cs",
+              "RelativeDocumentMoniker": "Lab8\\Lab8.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab8\\Lab8.cs",
+              "RelativeToolTip": "Lab8\\Lab8.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAGMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T00:21:43.812Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SimpleEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\SimpleEnemy.cs",
+              "RelativeDocumentMoniker": "GameEngine\\AI\\SimpleEnemy.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\SimpleEnemy.cs",
+              "RelativeToolTip": "GameEngine\\AI\\SimpleEnemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T02:26:07.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lab7.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab7\\Lab7.cs",
+              "RelativeDocumentMoniker": "Lab7\\Lab7.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab7\\Lab7.cs",
+              "RelativeToolTip": "Lab7\\Lab7.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T01:15:29.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lab9.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab9\\Lab9.cs",
+              "RelativeDocumentMoniker": "Lab9\\Lab9.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab9\\Lab9.cs",
+              "RelativeToolTip": "Lab9\\Lab9.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T00:07:03.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AStarSearch.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\AStarSearch.cs",
+              "RelativeDocumentMoniker": "GameEngine\\AI\\AStarSearch.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\AStarSearch.cs",
+              "RelativeToolTip": "GameEngine\\AI\\AStarSearch.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T00:06:11.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AStarNode.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\AStarNode.cs",
+              "RelativeDocumentMoniker": "GameEngine\\AI\\AStarNode.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\AI\\AStarNode.cs",
+              "RelativeToolTip": "GameEngine\\AI\\AStarNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T00:05:40.526Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.csproj.AssemblyReference.cache
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.AssemblyInfoInputs.cache
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.AssemblyInfo.cs
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.csproj.CoreCompileInputs.cache
+C:\Users\magui\source\repos\CPI3112024\Build\Debug\net6.0-windows\GameEngine.deps.json
+C:\Users\magui\source\repos\CPI3112024\Build\Debug\net6.0-windows\GameEngine.dll
+C:\Users\magui\source\repos\CPI3112024\Build\Debug\net6.0-windows\GameEngine.pdb
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.dll
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\refint\GameEngine.dll
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.pdb
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\ref\GameEngine.dll

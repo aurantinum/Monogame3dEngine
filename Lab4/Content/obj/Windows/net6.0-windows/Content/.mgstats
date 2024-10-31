@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab4/Content/Plane.FBX","C:/Users/magui/source/repos/CPI3112024/Lab4/Content/bin/Windows/Content/Plane.xnb","ModelProcessor","ModelContent",18832,1657,0.177041
+"C:/Users/magui/source/repos/CPI3112024/Lab4/Content/Sphere.FBX","C:/Users/magui/source/repos/CPI3112024/Lab4/Content/bin/Windows/Content/Sphere.xnb","ModelProcessor","ModelContent",39360,24315,0.0049466
+"C:/Users/magui/source/repos/CPI3112024/Lab4/Content/Torus (1).fbx","C:/Users/magui/source/repos/CPI3112024/Lab4/Content/bin/Windows/Content/Torus.xnb","ModelProcessor","ModelContent",27936,14521,0.1537299

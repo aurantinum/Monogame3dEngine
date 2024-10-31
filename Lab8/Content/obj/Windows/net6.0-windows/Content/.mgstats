@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab8/Content/Font.spritefont","C:/Users/magui/source/repos/CPI3112024/Lab8/Content/bin/Windows/Content/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.2196566
+"C:/Users/magui/source/repos/CPI3112024/Lab8/Content/Gun.wav","C:/Users/magui/source/repos/CPI3112024/Lab8/Content/bin/Windows/Content/Gun.xnb","SoundEffectProcessor","SoundEffectContent",8707,8700,0.3765846
+"C:/Users/magui/source/repos/CPI3112024/Lab8/Content/SimpleShading.fx","C:/Users/magui/source/repos/CPI3112024/Lab8/Content/bin/Windows/Content/SimpleShading.xnb","EffectProcessor","CompiledEffectContent",6130,6891,0.3166421
+"C:/Users/magui/source/repos/CPI3112024/Lab8/Content/Sphere.FBX","C:/Users/magui/source/repos/CPI3112024/Lab8/Content/bin/Windows/Content/Sphere.xnb","ModelProcessor","ModelContent",39360,24315,0.130969
+"C:/Users/magui/source/repos/CPI3112024/Lab8/Content/Square.png","C:/Users/magui/source/repos/CPI3112024/Lab8/Content/bin/Windows/Content/Square.xnb","TextureProcessor","Texture2DContent",213,4181,0.0251412

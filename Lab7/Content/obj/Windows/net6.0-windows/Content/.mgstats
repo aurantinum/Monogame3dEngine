@@ -1,0 +1,5 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Lab7/Content/Font.spritefont","C:/Users/magui/source/repos/CPI3112024/Lab7/Content/bin/Windows/Content/Font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.1910531
+"C:/Users/magui/source/repos/CPI3112024/Lab7/Content/SimpleShading.fx","C:/Users/magui/source/repos/CPI3112024/Lab7/Content/bin/Windows/Content/SimpleShading.xnb","EffectProcessor","CompiledEffectContent",6130,6891,0.4454595
+"C:/Users/magui/source/repos/CPI3112024/Lab7/Content/Sphere.FBX","C:/Users/magui/source/repos/CPI3112024/Lab7/Content/bin/Windows/Content/Sphere.xnb","ModelProcessor","ModelContent",39360,24315,0.0914908
+"C:/Users/magui/source/repos/CPI3112024/Lab7/Content/Square.png","C:/Users/magui/source/repos/CPI3112024/Lab7/Content/bin/Windows/Content/Square.xnb","TextureProcessor","Texture2DContent",213,4181,0.0343795

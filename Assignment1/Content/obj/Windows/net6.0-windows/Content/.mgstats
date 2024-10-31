@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/magui/source/repos/CPI3112024/Assignment1/Content/explorer.png","C:/Users/magui/source/repos/CPI3112024/Assignment1/Content/bin/Windows/Content/explorer.xnb","TextureProcessor","Texture2DContent",17343,163925,0.1711441
+"C:/Users/magui/source/repos/CPI3112024/Assignment1/Content/Square.png","C:/Users/magui/source/repos/CPI3112024/Assignment1/Content/bin/Windows/Content/Square.xnb","TextureProcessor","Texture2DContent",213,4181,0.0025827
