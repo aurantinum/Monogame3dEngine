@@ -10,3 +10,4 @@ C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameE
 C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\refint\GameEngine.dll
 C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.pdb
 C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\ref\GameEngine.dll
+C:\Users\magui\source\repos\CPI3112024\GameEngine\obj\Debug\net6.0-windows\GameEngine.sourcelink.json

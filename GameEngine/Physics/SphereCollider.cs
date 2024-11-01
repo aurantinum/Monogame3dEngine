@@ -1,9 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CPI311.GameEngine
 {
@@ -24,6 +19,7 @@ namespace CPI311.GameEngine
                 }
             }
             else if (other is BoxCollider) return other.Collides(this, out normal);
+
             return base.Collides(other, out normal);
         }
         public bool SweptCollides(Collider other, Vector3 otherLastPosition,
@@ -36,8 +32,8 @@ namespace CPI311.GameEngine
                 Vector3 vp = Transform.Position - lastPosition;
                 Vector3 vq = collider.Transform.Position - otherLastPosition;
                 // calculate the A and B (refer to the white board)
-                Vector3 A = new Vector3(0,0,0);
-                Vector3 B = new Vector3(0,0,0);
+                Vector3 A = new Vector3(0, 0, 0);
+                Vector3 B = new Vector3(0, 0, 0);
                 // calculate the a, b, and c
                 float a = 0;
                 float b = 0;
@@ -54,8 +50,7 @@ namespace CPI311.GameEngine
                     return true;
                 }
             }
-            else if (other is BoxCollider)
-                return other.Collides(this, out normal);
+            else if (other is BoxCollider) return other.Collides(this, out normal);
             return base.Collides(other, out normal);
         }
         public override float? Intersects(Ray ray)

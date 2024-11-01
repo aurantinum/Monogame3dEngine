@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment2", "Assignment2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab8", "Lab8\Lab8.csproj", "{CCC93B58-FB0E-4218-B7C4-0F9C559831A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab9", "Lab9\Lab9.csproj", "{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab9", "Lab9\Lab9.csproj", "{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigidBodyStuff", "RigidBodyStuff\RigidBodyStuff.csproj", "{700B6798-094D-4C93-9A60-BB009BEC6A9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700B6798-094D-4C93-9A60-BB009BEC6A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700B6798-094D-4C93-9A60-BB009BEC6A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700B6798-094D-4C93-9A60-BB009BEC6A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700B6798-094D-4C93-9A60-BB009BEC6A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
