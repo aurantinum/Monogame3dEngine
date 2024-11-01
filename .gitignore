@@ -3,6 +3,9 @@
 *.DS_Store
 
 #Visual Studio files
+*.v2
+*.vsidx
+.suo
 *.pidb
 *.userprefs
 *.[Oo]bj
@@ -61,5 +64,6 @@ monodroid*.msi
 *.dll
 *.VC.db
 *.VC.opendb
-
+*.vsidx
+*.v2
 artifacts/
