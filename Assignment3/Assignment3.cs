@@ -145,19 +145,21 @@ namespace Assignment3
 
             foreach (GameObject gameObject in gameObjects)
             {
-                Vector3 normal;
-                if (gameObject.Get<SphereCollider>() != null)
+                if(gameObject.Rigidbody == null)
                 {
-                    if (box.Get<BoxCollider>().Collides(gameObject.Get<SphereCollider>(), out normal))
-                    {
-                        if (Vector3.Dot(normal, gameObject.Rigidbody.Velocity) < 0)
-                            gameObject.Rigidbody.Impulse += Vector3.Dot(normal, gameObject.Rigidbody.Velocity) * -2 * normal;
-                    }
+                    continue;
                 }
+                Vector3 normal;
 
                 if (gameObject.Get<SphereCollider>() != null)
                 {
                     
+                    //if (box.Get<BoxCollider>().Collides(gameObject.Get<SphereCollider>(), out normal))
+                    if(box.Get<BoxCollider>().Intersects(new Ray(gameObject.Transform.Position, gameObject.Rigidbody.Velocity)))
+                    {
+                        //if (Vector3.Dot(normal, gameObject.Rigidbody.Velocity) < 0)
+                            gameObject.Rigidbody.Impulse += Vector3.Dot(normal, gameObject.Rigidbody.Velocity) * -2 * normal;
+                    }
                     if (gameObjects.IndexOf(gameObject) < gameObjects.Count - 1)
                     {
                         foreach (GameObject other in gameObjects.GetRange(gameObjects.IndexOf(gameObject) + 1, gameObjects.Count - 1 - gameObjects.IndexOf(gameObject)))

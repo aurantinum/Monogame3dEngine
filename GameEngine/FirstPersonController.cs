@@ -24,8 +24,10 @@ namespace CPI311.GameEngine
         {
 
             Vector3 howToMove = new Vector3(InputManager.HorizontalAxis, 0, -InputManager.VerticalAxis) * Time.ElapsedGameTime * MovementSpeed;
-            Transform.Rotate(Vector3.Up, -MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaX * MouseSensitivity));
-            Transform.Rotate(Vector3.Right, MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaY * MouseSensitivity));
+            if(InputManager.MouseDelta.X != 0)
+                Camera.Transform.Rotate(Transform.Up, -MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaX * MouseSensitivity));
+            if(InputManager.MouseDeltaY != 0)
+                Camera.Transform.Rotate(Transform.Right, MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaY * MouseSensitivity));
             howToMove = Vector3.Transform(howToMove, Transform.Rotation);
             howToMove.Y = 0;
             Rigidbody.Acceleration += howToMove;
