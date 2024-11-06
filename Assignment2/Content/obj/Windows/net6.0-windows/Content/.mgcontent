@@ -4,12 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/magui/source/repos/CPI3112024/Assignment2/Content/cube.FBX</File>
     <File>C:/Users/magui/source/repos/CPI3112024/Assignment2/Content/Font.spritefont</File>
     <File>C:/Users/magui/source/repos/CPI3112024/Assignment2/Content/SimpleShading.fx</File>
     <File>C:/Users/magui/source/repos/CPI3112024/Assignment2/Content/Sphere.FBX</File>
     <File>C:/Users/magui/source/repos/CPI3112024/Assignment2/Content/Square.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

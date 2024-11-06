@@ -11,6 +11,7 @@ namespace CPI311.GameEngine
         public Camera Camera { get { return Get<Camera>(); } }
         public Rigidbody Rigidbody { get { return Get<Rigidbody>(); } }
         public Collider Collider { get { return Get<Collider>(); } }
+        public Renderer Renderer { get { return Get<Renderer>(); } }
         private Dictionary<Type, Component> Components { get; set; }
         private List<IUpdateable> Updateables { get; set; }
         private List<IRenderable> Renderables { get; set; }
@@ -21,7 +22,6 @@ namespace CPI311.GameEngine
             Transform = new Transform();
             Components = new Dictionary<Type, Component>();
             Updateables = new List<IUpdateable>();
-
             Renderables = new List<IRenderable>();
             Drawables = new List<IDrawable>();
         }

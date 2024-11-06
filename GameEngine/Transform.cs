@@ -20,13 +20,15 @@ namespace CPI311.GameEngine
             localRotation = Quaternion.Identity;
             localScale = Vector3.One;
             Children = new List<Transform>();
+            Parent = null;
             UpdateWorld();
 
         }
         public void Rotate(Vector3 axis, float angle)
         {
-            LocalRotation *= Quaternion.CreateFromAxisAngle(axis, angle);
-
+            localRotation *= Quaternion.CreateFromAxisAngle(axis, angle);
+            localRotation.Z = 0;
+            UpdateWorld();
         }
         private void UpdateWorld() 
         {
@@ -85,14 +87,30 @@ namespace CPI311.GameEngine
         }
         public Quaternion Rotation
         {
-            get { return Quaternion.Identity; }
+            get { return Quaternion.CreateFromRotationMatrix(World); }
+            set
+            {
+                if (Parent == null) LocalRotation = value;
+                else
+                {
+                    Vector3 scale, pos; Quaternion rot;
+                    world.Decompose(out scale, out rot, out pos);
+                    Matrix total = Matrix.CreateScale(scale) *
+                    Matrix.CreateFromQuaternion(value) *
+                    Matrix.CreateTranslation(pos);
+                    LocalRotation = Quaternion.CreateFromRotationMatrix(
+                    Matrix.Invert(Matrix.CreateScale(LocalScale)) * total *
+                    Matrix.Invert(Matrix.CreateTranslation(LocalPosition)
+                    * Parent.world));
+                }
+            }
         }
-        public Vector3 Forward {  get { return World.Forward; } }
-        public Vector3 Backward {  get { return World.Backward; } }
-        public Vector3 Right {  get { return World.Right; } }
-        public Vector3 Left {  get { return World.Left; } }
-        public Vector3 Up {  get { return World.Up; } }
-        public Vector3 Down {  get { return World.Down; } }
+        public Vector3 Forward {  get { return world.Forward; } }
+        public Vector3 Backward {  get { return world.Backward; } }
+        public Vector3 Right {  get { return world.Right; } }
+        public Vector3 Left {  get { return world.Left; } }
+        public Vector3 Up {  get { return world.Up; } }
+        public Vector3 Down {  get { return world.Down; } }
         private Transform parent;
         public Transform Parent
         {

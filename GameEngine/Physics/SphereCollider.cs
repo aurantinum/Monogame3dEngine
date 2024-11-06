@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System;
 
 namespace CPI311.GameEngine
 {
@@ -28,27 +29,38 @@ namespace CPI311.GameEngine
             if (other is SphereCollider)
             {
                 SphereCollider collider = other as SphereCollider;
-                // calculate the vectors for two spheres
-                Vector3 vp = Transform.Position - lastPosition;
-                Vector3 vq = collider.Transform.Position - otherLastPosition;
-                // calculate the A and B (refer to the white board)
-                Vector3 A = new Vector3(0, 0, 0);
-                Vector3 B = new Vector3(0, 0, 0);
-                // calculate the a, b, and c
-                float a = 0;
-                float b = 0;
-                float c = 0;
-                float disc = (b * b) - (4 * a * c); // discriminant (b^2 – 4ac)
+                // Calculate the vectors for two spheres
+                Vector3 vp = Transform.Position - lastPosition; // Velocity of this sphere
+                Vector3 vq = collider.Transform.Position - otherLastPosition; // Velocity of other sphere
+
+                // Calculate the A and B (relative velocity and distance)
+                Vector3 A = vq - vp; // Relative velocity vector
+                Vector3 B = Transform.Position - collider.Transform.Position; // Initial distance vector between the centers
+
+                // Calculate the coefficients a, b, and c
+                float a = Vector3.Dot(A, A); // a = |A|^2
+                float b = 2 * Vector3.Dot(B, A); // b = 2 * (B • A)
+                float c = Vector3.Dot(B, B) - (Radius + collider.Radius) * (Radius + collider.Radius); // c = |B|^2 - (r1 + r2)^2
+
+                float disc = (b * b) - (4 * a * c); // Discriminant (b^2 - 4ac)
+
                 if (disc >= 0)
                 {
-                    float t = 0;
-                    Vector3 p = lastPosition + t * vp;
-                    Vector3 q = otherLastPosition + t * vq;
-                    Vector3 intersect = Vector3.Lerp(
-                    p, q, this.Radius / (this.Radius + collider.Radius));
-                    normal = Vector3.Normalize(p - q);
-                    return true;
+                    // Solve for t (we're interested in the first root)
+                    float t = (-b - MathF.Sqrt(disc)) / (2 * a);
+                    float t2 = (-b + MathF.Sqrt(disc)) / (2 * a);
+                    t = t > t2 ? t : t2;
+                    if (t >= 0 && t <= 1)
+                    {
+                        Vector3 p = lastPosition + t * vp;
+                        Vector3 q = otherLastPosition + t * vq;
+                        Vector3 intersect = Vector3.Lerp(
+                        p, q, this.Radius / (this.Radius + collider.Radius));
+                        normal = Vector3.Normalize(intersect);
+                        return true;
+                    }
                 }
+
             }
             else if (other is BoxCollider) return other.Collides(this, out normal);
             return base.Collides(other, out normal);

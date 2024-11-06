@@ -41,3 +41,4 @@ C:\Users\magui\source\repos\CPI3112024\Lab7\obj\Debug\net6.0-windows\Lab7.genrun
 C:\Users\magui\source\repos\CPI3112024\Lab7\obj\Debug\net6.0-windows\ref\Lab7.dll
 C:\Users\magui\source\repos\CPI3112024\Lab7\bin\Debug\net6.0-windows\Content\SimpleShading.xnb
 C:\Users\magui\source\repos\CPI3112024\Lab7\bin\Debug\net6.0-windows\Content\Square.xnb
+C:\Users\magui\source\repos\CPI3112024\Lab7\obj\Debug\net6.0-windows\Lab7.sourcelink.json

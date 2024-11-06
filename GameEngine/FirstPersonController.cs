@@ -6,11 +6,16 @@ namespace CPI311.GameEngine
     public class FirstPersonController : GameObject
     {
         public float MouseSensitivity = 2f;
-        public float MovementSpeed = 5f;
-        public FirstPersonController() 
+        public float MovementSpeed = 15f;
+        public float MaxSpeed = 5f;
+        public FirstPersonController() : base()
         {
+            Transform.Position = new(0,0,0);
             Add<Camera>();
             Add<Rigidbody>();
+            Rigidbody.Mass = 1;
+            Rigidbody.UseDrag = true;
+            Rigidbody.KineticFriction = 0.2f;
             Add<SphereCollider>();
             Camera.FieldOfView = MathHelper.ToRadians(90);
             Camera.NearPlane = .1f;
@@ -19,29 +24,11 @@ namespace CPI311.GameEngine
         {
 
             Vector3 howToMove = new Vector3(InputManager.HorizontalAxis, 0, -InputManager.VerticalAxis) * Time.ElapsedGameTime * MovementSpeed;
-            howToMove += new Vector3(0, 0, -InputManager.LeftMouse) * Time.ElapsedGameTime * MovementSpeed;
-
-            //Handle view input for first person
-            if (InputManager.IsKeyDown(Keys.Up))
-            {
-                Transform.Rotate(Vector3.Right, -MathHelper.ToRadians(Time.ElapsedGameTime * 10));
-            }
-            if (InputManager.IsKeyDown(Keys.Down))
-            {
-                Transform.Rotate(Vector3.Right, -MathHelper.ToRadians(-Time.ElapsedGameTime * 10));
-            }
-            if (InputManager.IsKeyDown(Keys.Left))
-            {
-                Camera.Transform.Rotate(Vector3.Up, -MathHelper.ToRadians(Time.ElapsedGameTime * 10));
-            }
-            if (InputManager.IsKeyDown(Keys.Right))
-            {
-                Camera.Transform.Rotate(Vector3.Up, -MathHelper.ToRadians(-Time.ElapsedGameTime * 10));
-            }
             Transform.Rotate(Vector3.Up, -MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaX * MouseSensitivity));
-            Camera.Transform.Rotate(Vector3.Right, -MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaY * MouseSensitivity));
-            Rigidbody.Impulse += howToMove;
-
+            Transform.Rotate(Vector3.Right, MathHelper.ToRadians(Time.ElapsedGameTime * InputManager.MouseDeltaY * MouseSensitivity));
+            howToMove = Vector3.Transform(howToMove, Transform.Rotation);
+            howToMove.Y = 0;
+            Rigidbody.Acceleration += howToMove;
             base.Update();
         }
     }

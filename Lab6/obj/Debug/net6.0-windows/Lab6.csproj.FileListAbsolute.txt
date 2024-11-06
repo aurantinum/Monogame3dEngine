@@ -39,3 +39,4 @@ C:\Users\magui\source\repos\CPI3112024\Lab6\obj\Debug\net6.0-windows\Lab6.pdb
 C:\Users\magui\source\repos\CPI3112024\Lab6\obj\Debug\net6.0-windows\Lab6.genruntimeconfig.cache
 C:\Users\magui\source\repos\CPI3112024\Lab6\obj\Debug\net6.0-windows\ref\Lab6.dll
 C:\Users\magui\source\repos\CPI3112024\Lab6\bin\Debug\net6.0-windows\Content\Font.xnb
+C:\Users\magui\source\repos\CPI3112024\Lab6\obj\Debug\net6.0-windows\Lab6.sourcelink.json

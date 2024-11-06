@@ -1,14 +1,11 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CPI311.GameEngine
 {
     public class BoxCollider : Collider
     {
+
         public override bool Collides(Collider other, out Vector3 normal)
         {
             if (other is SphereCollider)
@@ -26,18 +23,21 @@ namespace CPI311.GameEngine
                         Vector3 c = vertices[indices[baseIndex + 2]] * Size;
                         Vector3 n = normals[i];
                         Vector3 p = collider.Transform.Position;
-                        float d = Math.Abs(Vector3.Dot(p-a,n));// calculate the distance to the plane
-                        if (d < collider.Radius)
+                        float d = Math.Abs(Vector3.Dot(p - a, n));// calculate the distance to the plane
+                    if (d < collider.Radius)
                         {
-                            Vector3 pointOnPlane = p - n * d;  // calculate the closest point
-                            float area1 = Vector3.Dot(Vector3.Cross(b-a, pointOnPlane - a), n);// check if the point is inside of triangle
-                            float area2 = Vector3.Dot(Vector3.Cross(c - b, pointOnPlane - b), n);
-                            float area3 = Vector3.Dot(Vector3.Cross(a-c, pointOnPlane - c), n);
+                            Vector3 q = p - n * d; // calculate the closest point
+                            float area1 = Vector3.Dot(Vector3.Cross(b - a, q -
+                            a), n); // check if the point is inside of triangle
+                            float area2 = Vector3.Dot(Vector3.Cross(c - b, q -
+                            b), n);
+                            float area3 = Vector3.Dot(Vector3.Cross(a - c, q -
+                            c), n);
                             if (!(area1 < 0 || area2 < 0 || area3 < 0))
                             {
                                 normal += n;
                                 j = 1; // skip second triangle, if necessary
-                                if (i % 2 == 0) i += 1; // skip opposite side if necessary
+                                if (i % 2 == 0) i += 1; // skip opposite side ifnecessary
                                 isColliding = true;
                             }
                         }
@@ -57,9 +57,15 @@ namespace CPI311.GameEngine
             return new BoundingBox(-Vector3.One * Size, Vector3.One * Size).Intersects(ray);
         }
         public float Size { get; set; }
-        private static Vector3[] normals = { Vector3.Up, Vector3.Down, Vector3.Right, Vector3.Left,Vector3.Forward, Vector3.Backward,};
-        private static Vector3[] vertices = { new Vector3(-1,-1,1), new Vector3(1,-1,1), new Vector3(1,-1,-1), new Vector3(-1,-1,-1),
-        new Vector3(-1,1,1), new Vector3(1,1,1), new Vector3(1,1,-1), new Vector3(-1,1,-1), };
+        private static Vector3[] normals = {
+        Vector3.Up, Vector3.Down, Vector3.Right,
+        Vector3.Left,Vector3.Forward, Vector3.Backward,
+        };
+        private static Vector3[] vertices = {
+        new Vector3(-1,-1,1),new Vector3(1,-1,1), new Vector3(1,-1,-1),
+        new Vector3(-1,-1,-1), new Vector3(-1,1,1), new Vector3(1,1,1),
+        new Vector3(1,1,-1), new Vector3(-1,1,-1), 
+        };
         private static int[] indices = {
             0,1,2, 0,2,3, // Down: using vertices[0][1][2] , [0][2][3] ...
             5,4,7, 5,7,6, // Up

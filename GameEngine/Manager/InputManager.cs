@@ -17,6 +17,10 @@ namespace CPI311.GameEngine
         static Keys east = Keys.D;
         public static Keys West { set { west = value; } }
         static Keys west = Keys.A;
+        public static bool KeepMouseCentered = false;
+        public static int Width = 800;
+        public static int Height = 600;
+
         public static void Initialize()
         {
             PreviousKeyboardState = CurrentKeyboardState =
@@ -28,8 +32,21 @@ namespace CPI311.GameEngine
         {
             PreviousKeyboardState = CurrentKeyboardState;
             CurrentKeyboardState = Keyboard.GetState();
-            PreviousMouseState = CurrentMouseState;
-            CurrentMouseState = Mouse.GetState();
+
+            if (KeepMouseCentered)
+            {
+                CurrentMouseState = Mouse.GetState();
+                Mouse.SetPosition(Width / 2, Height / 2);
+                PreviousMouseState = Mouse.GetState();
+            }
+            else
+            {
+                PreviousMouseState = CurrentMouseState;
+
+                CurrentMouseState = Mouse.GetState();
+            }
+            
+
         }
         public static bool IsKeyDown(Keys key)
         {

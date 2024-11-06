@@ -37,7 +37,7 @@ namespace Assignment2
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            sphereModel = Content.Load<Model>("Sphere");
+            sphereModel = Content.Load<Model>("cube");
             texture = Content.Load<Texture2D>("Square");
             Transform lightTransform = new Transform();
             light = new Light();
@@ -173,7 +173,8 @@ namespace Assignment2
             
             _spriteBatch.Begin();
             Scene.Draw();
-            _spriteBatch.DrawString(font, "Move:WASD/Left Mouse\nLook:Arrows/Mouse\nZoom:pgup/dn\nAnimSpeed:C/V", new Vector2(100, 100), Color.Black);
+
+            _spriteBatch.DrawString(font, "Move:WASD/Left Mouse\nLook:Arrows/Mouse\nZoom:pgup/dn\nAnimSpeed:C/V\n"+player.Transform.Position.ToString(), new Vector2(100, 100), Color.Black);
             _spriteBatch.End();
             base.Draw(gameTime);
         }
