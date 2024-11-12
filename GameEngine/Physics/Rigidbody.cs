@@ -33,8 +33,8 @@ namespace CPI311.GameEngine
             //{
             //    Acceleration += new Vector3(0, Physics.Gravity, 0);
             //}
-            Velocity += Acceleration * Time.ElapsedGameTime + Impulse / Mass;
-            Transform.LocalPosition += Velocity * Time.ElapsedGameTime;
+            Velocity += (Acceleration * Time.ElapsedGameTime) + (Impulse / Mass);
+            Transform.LocalPosition += (Velocity * Time.ElapsedGameTime);
             if (UseDrag)
             {
                 if (Acceleration.Length() > 0)

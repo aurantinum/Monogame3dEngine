@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using CPI311.GameEngine;
 using System;
-using System.Diagnostics;
 using System.Threading;
 namespace Assignment3
 {
@@ -13,6 +12,7 @@ namespace Assignment3
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         List<GameObject> gameObjects;
+        private const int COLLISION_THREADS = 5;
         GameObject cameraGo, box;
         Model sphere;
         Light light;
@@ -20,6 +20,10 @@ namespace Assignment3
         Texture2D texture;
         Camera camera;
         SpriteFont font;
+        float frameTime;
+        int frames = 0;
+        int collisionCount = 0, lastSecondCollisions = 0;
+        bool haveThreadRunning = true;
         public Assignment3()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -54,6 +58,7 @@ namespace Assignment3
             cameraGo.Add<Camera>();
             gameObjects.Add(cameraGo);
             camera = cameraGo.Camera;
+            ThreadPool.QueueUserWorkItem(new WaitCallback(CollisionReset));
 
             //box collider
             box = new GameObject();
@@ -73,13 +78,26 @@ namespace Assignment3
                 Exit();
             Time.Update(gameTime);
             InputManager.Update();
-            if (InputManager.IsKeyPressed(Keys.Up))
+            frames += 1;
+            
+            frameTime = Time.TotalGameTime.Milliseconds;
+            frameTime = (frameTime - (((int)(frameTime / 1000)) * 1000))/1000;
+            for (int i = 0; i < gameObjects.Count; i++)
+            {
+                gameObjects[i].Update();
+            }
+
+            //for (int i = 0; i < COLLISION_THREADS; i++)
+            //{
+            ThreadPool.QueueUserWorkItem(new WaitCallback(Collide));//, i);
+            //}
+            if (InputManager.IsKeyDown(Keys.Up))
             {
                 GameObject newObject = CreateSphereAtPosition(new Vector3(random.Next(-9, 9), random.Next(-9, 9), random.Next(-9, 9)), 
                     new Vector3(1, 1, 1), Color.WhiteSmoke);
                 Vector3 direction = new Vector3((float)random.NextDouble(), (float)random.NextDouble(), (float)random.NextDouble());
                 direction.Normalize();
-                newObject.Rigidbody.Velocity = direction * ((float)random.NextDouble() * 5 + 5);
+                newObject.Rigidbody.Impulse = direction * ((float)random.NextDouble() * 5 + 5);
                 gameObjects.Add(newObject);
             }
             if (InputManager.IsKeyPressed(Keys.Down))
@@ -89,37 +107,34 @@ namespace Assignment3
                     gameObjects.RemoveAt(gameObjects.Count - 1);
                 }
             }
-            if (InputManager.IsKeyDown(Keys.Left))
+            if (InputManager.IsKeyPressed(Keys.Left))
             {
-                foreach (var gameObject in gameObjects)
+                for (int i = 0; i < gameObjects.Count; i++)
                 {
-                    if(gameObject.Rigidbody != null)
+                    
+                    if(gameObjects[i].Rigidbody != null)
                     {
-                        Debug.WriteLine("AddingVel");
-                        gameObject.Rigidbody.Impulse 
-                            -= Vector3.Normalize(gameObject.Rigidbody.Velocity) * 10 * Time.ElapsedGameTime;
+                        gameObjects[i].Rigidbody.Impulse 
+                            -= Vector3.Normalize(gameObjects[i].Rigidbody.Velocity) * 100 
+                            * gameObjects[i].Rigidbody.Mass * Time.ElapsedGameTime;
                     }
                 }
             }
-            if (InputManager.IsKeyDown(Keys.Right))
+            if (InputManager.IsKeyPressed(Keys.Right))
             {
-                foreach (var gameObject in gameObjects)
+                for (int i = 0; i < gameObjects.Count; i++)
                 {
-                    if(gameObject.Rigidbody != null)
+                    
+                    if(gameObjects[i].Rigidbody != null)
                     {
-                        Debug.WriteLine("AddingVel");
-
-                        gameObject.Rigidbody.Impulse 
-                            += Vector3.Normalize(gameObject.Rigidbody.Velocity) * 10 * Time.ElapsedGameTime;
+                        gameObjects[i].Rigidbody.Impulse 
+                            += Vector3.Normalize(gameObjects[i].Rigidbody.Velocity) * 100 * 
+                            gameObjects[i].Rigidbody.Mass * Time.ElapsedGameTime;
                     }
                 }
             }
-            foreach (var gameObject in gameObjects)
-            {
-                gameObject.Update();
-                
-            }
-            ThreadPool.QueueUserWorkItem(new WaitCallback(Collide));
+            
+           
             base.Update(gameTime);
         }
         
@@ -131,7 +146,21 @@ namespace Assignment3
                 gameObject.Draw();
             }
             _spriteBatch.Begin();
-            _spriteBatch.DrawString(font, gameObjects.Count + "", new Vector2(100, 100), Color.Black);
+            _spriteBatch.DrawString(font, "Balls: " + (gameObjects.Count - 2 )+ "\n"
+                +"Collisions on average: " + lastSecondCollisions
+                , new Vector2(100, 100), Color.Black);
+
+
+            int fps = 0;
+            if (frameTime > 0)
+            {
+                fps = (int)((float) frames / frameTime);
+            }
+            else frames = 0;
+
+            _spriteBatch.DrawString(font, "\nFPS: " + fps
+                    , new Vector2(100, 140), Color.Black);
+            
             foreach (GameObject gameObject in gameObjects)
             {
                 gameObject.Draw(_spriteBatch);
@@ -140,45 +169,75 @@ namespace Assignment3
 
             base.Draw(gameTime);
         }
+
         private void Collide(Object o)
         {
-
-            foreach (GameObject gameObject in gameObjects)
+            //int threadID = (int)o;
+            //int start = threadID * gameObjects.Count/COLLISION_THREADS;
+            //int end = (threadID + 1) * gameObjects.Count/COLLISION_THREADS;
+            //List<GameObject> _gameObjects = gameObjects;
+            int colHere = 0;
+            for (int i = 0; i < gameObjects.Count; i++)
             {
-                if(gameObject.Rigidbody == null)
+                GameObject gameObject = gameObjects[i];
+                if(gameObject == null)
+                {
+                    break;
+                }
+                if (gameObject.Rigidbody == null)
                 {
                     continue;
                 }
                 Vector3 normal;
-
+                
                 if (gameObject.Get<SphereCollider>() != null)
                 {
-                    
-                    //if (box.Get<BoxCollider>().Collides(gameObject.Get<SphereCollider>(), out normal))
-                    if(box.Get<BoxCollider>().Intersects(new Ray(gameObject.Transform.Position, gameObject.Rigidbody.Velocity)))
-                    {
-                        //if (Vector3.Dot(normal, gameObject.Rigidbody.Velocity) < 0)
-                            gameObject.Rigidbody.Impulse += Vector3.Dot(normal, gameObject.Rigidbody.Velocity) * -2 * normal;
+                    if (box.Get<BoxCollider>().Collides(gameObject.Get<SphereCollider>(), out normal))
+                    {                        
+                        colHere++;
+                        gameObject.Rigidbody.Impulse += Vector3.Dot(normal, gameObject.Rigidbody.Velocity) * -2 * normal;
                     }
-                    if (gameObjects.IndexOf(gameObject) < gameObjects.Count - 1)
+
+                    if (i < gameObjects.Count - 1)
                     {
-                        foreach (GameObject other in gameObjects.GetRange(gameObjects.IndexOf(gameObject) + 1, gameObjects.Count - 1 - gameObjects.IndexOf(gameObject)))
+                        for (int j = i + 1; j < gameObjects.Count; j++)
                         {
+                            GameObject other = gameObjects[j];
+                            
+                            if (other == null) { break; }
                             if (other.Get<SphereCollider>() != null)
                             {
-                                gameObject.Get<SphereCollider>().SweptCollides(other.Get<SphereCollider>(), other.Rigidbody.PreviousTransform.Position, gameObject.Rigidbody.PreviousTransform.Position, out normal);
-                                Vector3 velocityNormal = Vector3.Dot(normal, gameObject.Rigidbody.Velocity - other.Rigidbody.Velocity)
-                                    * -2 * normal * gameObject.Rigidbody.Mass * other.Rigidbody.Mass;
-                                gameObject.Rigidbody.Impulse += velocityNormal / 2.5f;
-                                other.Rigidbody.Impulse += -velocityNormal / 2.5f;
+                                if (gameObject.Get<SphereCollider>().Collides(other.Get<SphereCollider>(), out normal))
+                                {
+                                    colHere++;
+                                }
+                                if (gameObject.Get<SphereCollider>().SweptCollides(other.Get<SphereCollider>(), other.Rigidbody.PreviousTransform.Position, gameObject.Rigidbody.PreviousTransform.Position, out normal)
+                                    && normal != Vector3.Zero) { }
+                             
+                                Vector3 velocityNormal = Vector3.Dot(normal, 
+                                      (gameObject.Rigidbody.Velocity * gameObject.Rigidbody.Mass) 
+                                    - (other.Rigidbody.Velocity * other.Rigidbody.Mass))
+                                    * -1 * normal;
+                                gameObject.Rigidbody.Impulse += (velocityNormal / other.Rigidbody.Mass);
+                                other.Rigidbody.Impulse += (-velocityNormal / gameObject.Rigidbody.Mass);
+                                
                             }
                         }
                     }
                 }
             }
-
+            collisionCount += colHere;
         }
-
+        private void CollisionReset(Object obj)
+        {
+            
+            while (haveThreadRunning)
+            {
+                lastSecondCollisions = collisionCount;
+                collisionCount = 0;
+                System.Threading.Thread.Sleep(1000);
+            }
+        }
 
         private GameObject CreateSphereAtPosition(Vector3 position, Vector3 scale, Color color)
         {

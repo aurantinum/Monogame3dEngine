@@ -75,7 +75,7 @@ namespace Lab7
             {
                 AddSphere();
             }
-
+            
 
             foreach (Rigidbody rigidbody in rigidbodies) rigidbody.Update();
             

@@ -36,7 +36,7 @@ namespace CPI311.GameEngine
                             if (!(area1 < 0 || area2 < 0 || area3 < 0))
                             {
                                 normal += n;
-                                j = 1; // skip second triangle, if necessary
+                                j += 1; // skip second triangle, if necessary
                                 if (i % 2 == 0) i += 1; // skip opposite side ifnecessary
                                 isColliding = true;
                             }
