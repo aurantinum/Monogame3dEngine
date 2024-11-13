@@ -17,8 +17,10 @@ namespace CPI311.GameEngine
         private List<IRenderable> Renderables { get; set; }
         private List<IDrawable> Drawables { get; set; }
         public string name = "";
+        public bool IsActive = true;
         public GameObject()
         {
+            
             Transform = new Transform();
             Components = new Dictionary<Type, Component>();
             Updateables = new List<IUpdateable>();

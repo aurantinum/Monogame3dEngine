@@ -28,6 +28,7 @@ namespace CPI311.GameEngine
             PreviousMouseState = CurrentMouseState =
             Mouse.GetState();
         }
+
         public static void Update()
         {
             PreviousKeyboardState = CurrentKeyboardState;
@@ -48,6 +49,20 @@ namespace CPI311.GameEngine
             
 
         }
+        public static bool IsLeftMouseDown()
+        {
+            return CurrentMouseState.LeftButton == ButtonState.Pressed;
+        }
+
+        public static bool IsLeftMouseUp()
+        {
+            return CurrentMouseState.LeftButton == ButtonState.Released;
+        }
+
+        public static bool IsLeftMousePressed()
+        {
+            return IsLeftMouseDown() && PreviousMouseState.LeftButton == ButtonState.Released;
+        }
         public static bool IsKeyDown(Keys key)
         {
             return CurrentKeyboardState.IsKeyDown(key);
@@ -57,6 +72,11 @@ namespace CPI311.GameEngine
             return CurrentKeyboardState.IsKeyDown(key) &&
             PreviousKeyboardState.IsKeyUp(key);
         }
+        //public static bool IsMousePressed(int button)
+        //{
+        //    return CurrentMouseState.(button) &&
+        //   PreviousKeyboardState.IsKeyUp(key);
+        //}
         public static bool IsKeyUp(Keys key)
         {
             return CurrentKeyboardState.IsKeyUp(key);
