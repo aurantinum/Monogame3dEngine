@@ -7,7 +7,7 @@ namespace Assignment2
 {
     public class Assignment2 : Game
     {
-        Scene scene;
+        _Scene scene;
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         SpriteFont font;
@@ -64,7 +64,7 @@ namespace Assignment2
             scene.Add(viewer);
             font = Content.Load<SpriteFont>("Font");
             CreatePlanets();
-            Scene.AddScene(scene);
+            _Scene.AddScene(scene);
         }
 
         
@@ -73,7 +73,7 @@ namespace Assignment2
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            Scene.Update(gameTime);
+            _Scene.Update(gameTime);
             if (InputManager.IsKeyPressed(Keys.Tab))
             {
                 //switch from first to third and back
@@ -172,7 +172,7 @@ namespace Assignment2
             GraphicsDevice.Clear(Color.CornflowerBlue);
             
             _spriteBatch.Begin();
-            Scene.Draw();
+            _Scene.Draw();
 
             _spriteBatch.DrawString(font, "Move:WASD/Left Mouse\nLook:Arrows/Mouse\nZoom:pgup/dn\nAnimSpeed:C/V\n"+player.Transform.Position.ToString(), new Vector2(100, 100), Color.Black);
             _spriteBatch.End();

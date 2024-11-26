@@ -26,8 +26,7 @@ namespace CPI311.GameEngine
         }
         public void Rotate(Vector3 axis, float angle)
         {
-            localRotation *= Quaternion.CreateFromAxisAngle(axis, angle);
-            localRotation.Z = 0;
+            localRotation = Quaternion.Concatenate(localRotation, Quaternion.CreateFromAxisAngle(axis, angle));
             UpdateWorld();
         }
         private void UpdateWorld() 

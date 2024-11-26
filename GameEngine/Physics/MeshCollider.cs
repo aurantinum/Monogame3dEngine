@@ -50,7 +50,16 @@ namespace CPI311.GameEngine
             {
                 normal = Vector3.Zero;
                 MeshCollider collider = other as MeshCollider;
-                
+                foreach (var mesh in Model.Meshes)
+                {
+                    foreach (var othermesh in collider.Model.Meshes) {
+                        if (ContainmentType.Intersects == mesh.BoundingSphere.Contains(othermesh.BoundingSphere))
+                        {
+                            normal = Vector3.Normalize(Transform.Position - collider.Transform.Position);
+                            return true;
+                        }
+                    }
+                }
             }
             return base.Collides(other, out normal);
         }

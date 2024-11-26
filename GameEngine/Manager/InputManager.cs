@@ -72,11 +72,54 @@ namespace CPI311.GameEngine
             return CurrentKeyboardState.IsKeyDown(key) &&
             PreviousKeyboardState.IsKeyUp(key);
         }
-        //public static bool IsMousePressed(int button)
-        //{
-        //    return CurrentMouseState.(button) &&
-        //   PreviousKeyboardState.IsKeyUp(key);
-        //}
+        public static bool IsMouseDown(int button)
+        {
+            switch (button)
+            {
+                case 0:
+                    return CurrentMouseState.LeftButton == ButtonState.Pressed;
+                case 1:
+                    return CurrentMouseState.RightButton == ButtonState.Pressed;
+                case 2:
+                    return CurrentMouseState.MiddleButton == ButtonState.Pressed;
+                default:
+                    return false;
+            }
+        }
+        public static bool IsMousePressed(int button)
+        {
+            switch (button)
+            {
+                case 0:
+                    return CurrentMouseState.LeftButton == ButtonState.Pressed && 
+                        PreviousMouseState.LeftButton != ButtonState.Pressed;
+                case 1:
+                    return CurrentMouseState.RightButton == ButtonState.Pressed &&
+                        PreviousMouseState.RightButton != ButtonState.Pressed;
+                case 2:
+                    return CurrentMouseState.MiddleButton == ButtonState.Pressed &&
+                        PreviousMouseState.MiddleButton != ButtonState.Pressed;
+                default:
+                    return false;
+            }
+        } 
+        public static bool IsMouseReleased(int button)
+        {
+            switch (button)
+            {
+                case 0:
+                    return CurrentMouseState.LeftButton != ButtonState.Pressed && 
+                        PreviousMouseState.LeftButton == ButtonState.Pressed;
+                case 1:
+                    return CurrentMouseState.RightButton != ButtonState.Pressed &&
+                        PreviousMouseState.RightButton == ButtonState.Pressed;
+                case 2:
+                    return CurrentMouseState.MiddleButton != ButtonState.Pressed &&
+                        PreviousMouseState.MiddleButton == ButtonState.Pressed;
+                default:
+                    return false;
+            }
+        }
         public static bool IsKeyUp(Keys key)
         {
             return CurrentKeyboardState.IsKeyUp(key);

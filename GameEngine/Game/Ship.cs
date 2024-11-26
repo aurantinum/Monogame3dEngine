@@ -22,10 +22,12 @@ namespace CPI311.GameEngine
             Add<Renderer>(renderer);
 
             // *** Add collider
-            SphereCollider sphereCollider = new SphereCollider();
-            sphereCollider.Radius = renderer.ObjectModel.Meshes[0].BoundingSphere.Radius;
-            sphereCollider.Transform = Transform;
-            Add<Collider>(sphereCollider);
+            MeshCollider meshCollider = new MeshCollider();
+            //sphereCollider.Radius = renderer.ObjectModel.Meshes[0].BoundingSphere.Radius;
+            meshCollider.Model = renderer.ObjectModel;
+            meshCollider.Transform = Transform;
+            //sphereCollider.Transform = Transform;
+            Add<Collider>(meshCollider);
 
             //*** Additional Property (for Asteroid, isActive = true)
             IsActive = false;
