@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\magui\\source\\repos\\CPI3112024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{978298C6-EEA5-4455-B546-58763042C93A}|Lab11\\Lab11.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab11\\lab11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{978298C6-EEA5-4455-B546-58763042C93A}|Lab11\\Lab11.csproj|solutionrelative:lab11\\lab11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ui\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ui\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ui\\guielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ui\\guielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ui\\checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ui\\checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{911B9C2D-D4E2-470F-8F22-E99EDC55CE84}|Assignment5\\Assignment5.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\assignment5\\assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{911B9C2D-D4E2-470F-8F22-E99EDC55CE84}|Assignment5\\Assignment5.csproj|solutionrelative:assignment5\\assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F700369-B61C-481C-A1B1-541B75D0BB98}|Lab10\\Lab10.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab10\\lab10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,95 +15,12 @@
       "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\manager\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\manager\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\game\\asteroids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\asteroids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCC93B58-FB0E-4218-B7C4-0F9C559831A5}|Lab8\\Lab8.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab8\\lab8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC93B58-FB0E-4218-B7C4-0F9C559831A5}|Lab8\\Lab8.csproj|solutionrelative:lab8\\lab8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}|Lab9\\Lab9.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab9\\lab9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15B40E2D-6332-45CB-BFDB-4BDD8875FB7C}|Lab9\\Lab9.csproj|solutionrelative:lab9\\lab9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F700369-B61C-481C-A1B1-541B75D0BB98}|Lab10\\Lab10.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab10\\lab10.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2F700369-B61C-481C-A1B1-541B75D0BB98}|Lab10\\Lab10.csproj|solutionrelative:lab10\\lab10.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{700B6798-094D-4C93-9A60-BB009BEC6A9A}|RigidBodyStuff\\RigidBodyStuff.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\rigidbodystuff\\rigidbodystuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{700B6798-094D-4C93-9A60-BB009BEC6A9A}|RigidBodyStuff\\RigidBodyStuff.csproj|solutionrelative:rigidbodystuff\\rigidbodystuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\sscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\sscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\manager\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\manager\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFCE65C3-BB23-4242-8CB8-EF8E1E650EE5}|Assignment4\\Assignment4.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\assignment4\\assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFCE65C3-BB23-4242-8CB8-EF8E1E650EE5}|Assignment4\\Assignment4.csproj|solutionrelative:assignment4\\assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\game\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\game\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\magui\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\physics\\meshcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\physics\\meshcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\game\\particlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\particlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\game\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\game\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\physics\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\physics\\rigidbody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\physics\\boxcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\physics\\boxcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\physics\\spherecollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\physics\\spherecollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{584AE3EB-BA1D-46CD-B3DD-A740C0CEA2A9}|Lab7\\Lab7.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab7\\lab7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{584AE3EB-BA1D-46CD-B3DD-A740C0CEA2A9}|Lab7\\Lab7.csproj|solutionrelative:lab7\\lab7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -125,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 62,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Bullet.cs",
               "RelativeDocumentMoniker": "GameEngine\\Game\\Bullet.cs",
@@ -142,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Asteroids.cs",
               "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Asteroids.cs",
               "RelativeDocumentMoniker": "GameEngine\\Game\\Asteroids.cs",
@@ -151,11 +56,12 @@
               "ViewState": "AgIAACEAAAAAAAAAAAAAADQAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T00:12:46.987Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "GameConstants.cs",
               "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\GameConstants.cs",
               "RelativeDocumentMoniker": "GameEngine\\Game\\GameConstants.cs",
@@ -164,323 +70,34 @@
               "ViewState": "AgIAAAQAAAAAAAAAAADwvxoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T00:01:40.041Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Lab10.csproj",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab10\\Lab10.csproj",
-              "RelativeDocumentMoniker": "Lab10\\Lab10.csproj",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab10\\Lab10.csproj",
-              "RelativeToolTip": "Lab10\\Lab10.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-20T02:07:28.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Button.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Button.cs",
-              "RelativeDocumentMoniker": "GameEngine\\UI\\Button.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Button.cs",
-              "RelativeToolTip": "GameEngine\\UI\\Button.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:34:55.799Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Lab11.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab11\\Lab11.cs",
-              "RelativeDocumentMoniker": "Lab11\\Lab11.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab11\\Lab11.cs",
-              "RelativeToolTip": "Lab11\\Lab11.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "Title": "Assignment5.cs",
+              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Assignment5\\Assignment5.cs",
+              "RelativeDocumentMoniker": "Assignment5\\Assignment5.cs",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Assignment5\\Assignment5.cs*",
+              "RelativeToolTip": "Assignment5\\Assignment5.cs*",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAOcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:02:21.067Z",
+              "WhenOpened": "2024-11-26T23:52:35.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ScreenManager.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Manager\\ScreenManager.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Manager\\ScreenManager.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Manager\\ScreenManager.cs",
-              "RelativeToolTip": "GameEngine\\Manager\\ScreenManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:02:28.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GUIElement.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\GUIElement.cs",
-              "RelativeDocumentMoniker": "GameEngine\\UI\\GUIElement.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\GUIElement.cs",
-              "RelativeToolTip": "GameEngine\\UI\\GUIElement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:31:44.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Checkbox.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Checkbox.cs",
-              "RelativeDocumentMoniker": "GameEngine\\UI\\Checkbox.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Checkbox.cs",
-              "RelativeToolTip": "GameEngine\\UI\\Checkbox.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T01:44:16.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Lab10.cs",
               "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab10\\Lab10.cs",
               "RelativeDocumentMoniker": "Lab10\\Lab10.cs",
               "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab10\\Lab10.cs",
               "RelativeToolTip": "Lab10\\Lab10.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:07:31.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Lab9.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab9\\Lab9.cs",
-              "RelativeDocumentMoniker": "Lab9\\Lab9.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab9\\Lab9.cs",
-              "RelativeToolTip": "Lab9\\Lab9.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADgv0sAAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:07:44.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Lab8.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab8\\Lab8.cs",
-              "RelativeDocumentMoniker": "Lab8\\Lab8.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab8\\Lab8.cs",
-              "RelativeToolTip": "Lab8\\Lab8.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADgvy4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:07:51.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "sScene.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\sScene.cs",
-              "RelativeDocumentMoniker": "GameEngine\\sScene.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\sScene.cs",
-              "RelativeToolTip": "GameEngine\\sScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:50:29.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RigidBodyStuff.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\RigidBodyStuff\\RigidBodyStuff.cs",
-              "RelativeDocumentMoniker": "RigidBodyStuff\\RigidBodyStuff.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\RigidBodyStuff\\RigidBodyStuff.cs",
-              "RelativeToolTip": "RigidBodyStuff\\RigidBodyStuff.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:10:55.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Transform.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Transform.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Transform.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Transform.cs",
-              "RelativeToolTip": "GameEngine\\Transform.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T23:06:44.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Manager\\InputManager.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Manager\\InputManager.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Manager\\InputManager.cs",
-              "RelativeToolTip": "GameEngine\\Manager\\InputManager.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAADwv3QAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:17:54.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Ship.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Ship.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Game\\Ship.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Ship.cs",
-              "RelativeToolTip": "GameEngine\\Game\\Ship.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T19:38:29.655Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FirstPersonController.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\FirstPersonController.cs",
-              "RelativeDocumentMoniker": "GameEngine\\FirstPersonController.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\FirstPersonController.cs",
-              "RelativeToolTip": "GameEngine\\FirstPersonController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAB+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:14:59.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MonoGame.Content.Builder.Task.targets",
-              "DocumentMoniker": "C:\\Users\\magui\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "ToolTip": "C:\\Users\\magui\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\build\\MonoGame.Content.Builder.Task.targets",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAuwI0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-11-19T19:41:17.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Assignment4.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Assignment4\\Assignment4.cs",
-              "RelativeDocumentMoniker": "Assignment4\\Assignment4.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Assignment4\\Assignment4.cs",
-              "RelativeToolTip": "Assignment4\\Assignment4.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAOoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T19:37:13.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MeshCollider.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\MeshCollider.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Physics\\MeshCollider.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\MeshCollider.cs",
-              "RelativeToolTip": "GameEngine\\Physics\\MeshCollider.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAwDYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T19:33:15.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ParticleManager.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\ParticleManager.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Game\\ParticleManager.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\ParticleManager.cs",
-              "RelativeToolTip": "GameEngine\\Game\\ParticleManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:15:36.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Rigidbody.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\Rigidbody.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Physics\\Rigidbody.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\Rigidbody.cs",
-              "RelativeToolTip": "GameEngine\\Physics\\Rigidbody.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T07:00:06.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Particle.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Particle.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Game\\Particle.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Game\\Particle.cs",
-              "RelativeToolTip": "GameEngine\\Game\\Particle.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:19:54.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "GameObject.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\GameObject.cs",
-              "RelativeDocumentMoniker": "GameEngine\\GameObject.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\GameObject.cs",
-              "RelativeToolTip": "GameEngine\\GameObject.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T23:56:21.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Lab7.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab7\\Lab7.cs",
-              "RelativeDocumentMoniker": "Lab7\\Lab7.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab7\\Lab7.cs",
-              "RelativeToolTip": "Lab7\\Lab7.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAE0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T22:02:33.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BoxCollider.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\BoxCollider.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Physics\\BoxCollider.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\BoxCollider.cs",
-              "RelativeToolTip": "GameEngine\\Physics\\BoxCollider.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T19:36:54.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SphereCollider.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\SphereCollider.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Physics\\SphereCollider.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Physics\\SphereCollider.cs",
-              "RelativeToolTip": "GameEngine\\Physics\\SphereCollider.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAA0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:41:23.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Renderer.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Rendering\\Renderer.cs",
-              "RelativeDocumentMoniker": "GameEngine\\Rendering\\Renderer.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\Rendering\\Renderer.cs",
-              "RelativeToolTip": "GameEngine\\Rendering\\Renderer.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:51:06.272Z"
+              "WhenOpened": "2024-11-20T02:07:31.776Z",
+              "EditorCaption": ""
             }
           ]
         }
