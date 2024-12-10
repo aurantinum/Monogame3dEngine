@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 namespace CPI311.GameEngine
 {
-    internal class sScene
+    public class Scene
     {
          delegate void CallMethod();
          CallMethod Update;
          CallMethod Draw;
-         sScene(CallMethod update, CallMethod draw)
+         Scene(CallMethod update, CallMethod draw)
         { Update = update; Draw = draw; }
 
 

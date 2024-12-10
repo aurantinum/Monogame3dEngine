@@ -7,7 +7,7 @@ namespace Assignment2
 {
     public class Assignment2 : Game
     {
-        _Scene scene;
+        Scene scene;
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         SpriteFont font;
@@ -30,7 +30,7 @@ namespace Assignment2
         {
             Time.Initialize();
             InputManager.Initialize();
-            scene = new Scene();
+            //scene = new Scene();
             base.Initialize();
         }
 
@@ -47,7 +47,7 @@ namespace Assignment2
             viewer.Add<Camera>();
             plane = CreateSphereAtPosition(new Vector3(0, -0.05f, 0), new Vector3(1000, 0.001f, 1000), Color.WhiteSmoke);
             plane.Remove<SphereCollider>();
-            scene.Add(plane);
+            //scene.Add(plane);
             viewer.Transform.Rotate(Vector3.Right, -MathHelper.PiOver2);
             viewer.Camera.Transform.Position = new Vector3(0, 100, 0);
             viewer.Camera.NearPlane /= 10;
@@ -60,11 +60,11 @@ namespace Assignment2
             player.Get<Renderer>().Material.Diffuse = Color.Black.ToVector3();
             player.Get<Renderer>().Material.Specular = Color.Black.ToVector3();
             player.Get<Renderer>().Material.Ambient = Color.Black.ToVector3();
-            scene.Add(player);
-            scene.Add(viewer);
+            //scene.Add(player);
+            //scene.Add(viewer);
             font = Content.Load<SpriteFont>("Font");
             CreatePlanets();
-            _Scene.AddScene(scene);
+            //Scene.AddScene(scene);
         }
 
         
@@ -73,7 +73,7 @@ namespace Assignment2
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            _Scene.Update(gameTime);
+            //_Scene.Update(gameTime);
             if (InputManager.IsKeyPressed(Keys.Tab))
             {
                 //switch from first to third and back
@@ -145,23 +145,23 @@ namespace Assignment2
             //Control Anim Speed
             if (InputManager.IsKeyDown(Keys.C))
             {
-                foreach(GameObject go in scene.GameObjects)
-                {
-                    if(go.Get<Orbit>() != null)
-                        go.Get<Orbit>().orbitSpeed -= Time.ElapsedGameTime;
-                    if(go.Get<RotateSphere>() != null)
-                        go.Get<RotateSphere>().rotationSpeed -= Time.ElapsedGameTime;
-                }
+                //foreach(GameObject go in scene.GameObjects)
+                //{
+                //    if(go.Get<Orbit>() != null)
+                //        go.Get<Orbit>().orbitSpeed -= Time.ElapsedGameTime;
+                //    if(go.Get<RotateSphere>() != null)
+                //        go.Get<RotateSphere>().rotationSpeed -= Time.ElapsedGameTime;
+                //}
             }
             if (InputManager.IsKeyDown(Keys.V))
             {
-                foreach (GameObject go in scene.GameObjects)
-                {
-                    if (go.Get<Orbit>() != null)
-                        go.Get<Orbit>().orbitSpeed += Time.ElapsedGameTime;
-                    if (go.Get<RotateSphere>() != null)
-                        go.Get<RotateSphere>().rotationSpeed += Time.ElapsedGameTime;
-                }
+                //foreach (GameObject go in scene.GameObjects)
+                //{
+                //    if (go.Get<Orbit>() != null)
+                //        go.Get<Orbit>().orbitSpeed += Time.ElapsedGameTime;
+                //    if (go.Get<RotateSphere>() != null)
+                //        go.Get<RotateSphere>().rotationSpeed += Time.ElapsedGameTime;
+                //}
             }
 
             base.Update(gameTime);
@@ -172,7 +172,7 @@ namespace Assignment2
             GraphicsDevice.Clear(Color.CornflowerBlue);
             
             _spriteBatch.Begin();
-            _Scene.Draw();
+            //_Scene.Draw();
 
             _spriteBatch.DrawString(font, "Move:WASD/Left Mouse\nLook:Arrows/Mouse\nZoom:pgup/dn\nAnimSpeed:C/V\n"+player.Transform.Position.ToString(), new Vector2(100, 100), Color.Black);
             _spriteBatch.End();
@@ -199,23 +199,23 @@ namespace Assignment2
         {
             sun = CreateSphereAtPosition(new Vector3(0,30,0), Vector3.One * 5, Color.Yellow);
             sun.Add<RotateSphere>();
-            scene.Add(sun);
-            mercury = CreateSphereAtPosition(new Vector3(0, 30, 40), Vector3.One * 2, Color.Red);
-            mercury.Add<Orbit>();
-            mercury.Get<Orbit>().toOrbitAround = sun;
-            scene.Add(mercury);
-            earth = CreateSphereAtPosition(new Vector3(0, 30, 90), Vector3.One * 3, Color.Aqua);
-            earth.Add<Orbit>();
-            earth.Get<Orbit>().toOrbitAround = sun;
-            earth.Add<RotateSphere>();
-            scene.Add(earth);
-            moon = CreateSphereAtPosition(earth.Transform.LocalPosition + new Vector3(0, 0, 10), Vector3.One, Color.Gray);
-            moon.Add<RotateSphere>();
-            moon.Add<Orbit>();
-            moon.Get<Orbit>().toOrbitAround = earth;
-            moon.Get<Orbit>().orbitSpeed = 10f;
-            moon.Get<RotateSphere>().rotationSpeed = 20f;
-            scene.Add(moon);
+            //scene.Add(sun);
+            //mercury = CreateSphereAtPosition(new Vector3(0, 30, 40), Vector3.One * 2, Color.Red);
+            //mercury.Add<Orbit>();
+            //mercury.Get<Orbit>().toOrbitAround = sun;
+            //scene.Add(mercury);
+            //earth = CreateSphereAtPosition(new Vector3(0, 30, 90), Vector3.One * 3, Color.Aqua);
+            //earth.Add<Orbit>();
+            //earth.Get<Orbit>().toOrbitAround = sun;
+            //earth.Add<RotateSphere>();
+            //scene.Add(earth);
+            //moon = CreateSphereAtPosition(earth.Transform.LocalPosition + new Vector3(0, 0, 10), Vector3.One, Color.Gray);
+            //moon.Add<RotateSphere>();
+            //moon.Add<Orbit>();
+            //moon.Get<Orbit>().toOrbitAround = earth;
+            //moon.Get<Orbit>().orbitSpeed = 10f;
+            //moon.Get<RotateSphere>().rotationSpeed = 20f;
+            //scene.Add(moon);
         }
     }
 }

@@ -41,7 +41,7 @@ namespace CPI311.GameEngine
             Rectangle FillRect = new Rectangle(
                 HorizontalPadding, 
                 VerticalPadding,
-                (int)(Value/MaxValue * (float) (Texture.Width - HorizontalPadding)),
+                (int)((Value/MaxValue) * (float) (Texture.Width - HorizontalPadding)),
                 Texture.Height - VerticalPadding);
             spriteBatch.Draw(Texture, Position, FillRect, FillColor, Rotation, Origin, Scale, Effects, Layer);
         }

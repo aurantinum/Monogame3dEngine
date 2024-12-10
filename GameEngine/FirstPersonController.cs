@@ -14,8 +14,7 @@ namespace CPI311.GameEngine
             Add<Camera>();
             Add<Rigidbody>();
             Rigidbody.Mass = 1;
-            Rigidbody.UseDrag = true;
-            Rigidbody.KineticFriction = 0.2f;
+       
             Add<SphereCollider>();
             Camera.FieldOfView = MathHelper.ToRadians(90);
             Camera.NearPlane = .1f;
