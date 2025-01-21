@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\magui\\source\\repos\\CPI3112024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\2d\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\2d\\progressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B55CFF7-5640-42D7-A7E9-361107A97F2E}|FinalProject\\FinalProject.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\finalproject\\finalproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B55CFF7-5640-42D7-A7E9-361107A97F2E}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\finalproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ui\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ui\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\gameengine\\ui\\guielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1979DEE-F53A-4F5F-924E-7B80CE5EA88E}|GameEngine\\GameEngine.csproj|solutionrelative:gameengine\\ui\\guielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978298C6-EEA5-4455-B546-58763042C93A}|Lab11\\Lab11.csproj|c:\\users\\magui\\source\\repos\\cpi3112024\\lab11\\lab11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{978298C6-EEA5-4455-B546-58763042C93A}|Lab11\\Lab11.csproj|solutionrelative:lab11\\lab11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 62,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FinalProject.cs",
               "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\FinalProject\\FinalProject.cs",
               "RelativeDocumentMoniker": "FinalProject\\FinalProject.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\FinalProject\\FinalProject.cs*",
-              "RelativeToolTip": "FinalProject\\FinalProject.cs*",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAAHIAAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\FinalProject\\FinalProject.cs",
+              "RelativeToolTip": "FinalProject\\FinalProject.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAG8AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T19:50:44.947Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GUIElement.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\GUIElement.cs",
-              "RelativeDocumentMoniker": "GameEngine\\UI\\GUIElement.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\GUIElement.cs",
-              "RelativeToolTip": "GameEngine\\UI\\GUIElement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T18:41:57.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Button.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Button.cs",
-              "RelativeDocumentMoniker": "GameEngine\\UI\\Button.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\UI\\Button.cs",
-              "RelativeToolTip": "GameEngine\\UI\\Button.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T18:41:53.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Lab11.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab11\\Lab11.cs",
-              "RelativeDocumentMoniker": "Lab11\\Lab11.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\Lab11\\Lab11.cs",
-              "RelativeToolTip": "Lab11\\Lab11.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T18:27:55.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProgressBar.cs",
-              "DocumentMoniker": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\2D\\ProgressBar.cs",
-              "RelativeDocumentMoniker": "GameEngine\\2D\\ProgressBar.cs",
-              "ToolTip": "C:\\Users\\magui\\source\\repos\\CPI3112024\\GameEngine\\2D\\ProgressBar.cs",
-              "RelativeToolTip": "GameEngine\\2D\\ProgressBar.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAWwBIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T03:55:32.857Z",
               "EditorCaption": ""
             }
           ]

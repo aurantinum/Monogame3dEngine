@@ -130,3 +130,9 @@
 /processorParam:TextureFormat=Color
 /build:TexturedLevelNM.png
 
+#begin zodikremixed2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:zodikremixed2.wav
+

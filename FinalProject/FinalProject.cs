@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System;
 using System.Diagnostics;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Audio;
 
 namespace FinalProject
 {
@@ -25,6 +26,7 @@ namespace FinalProject
         List<Upgrade> upgrades;
         List<Sprite> menuSprites;
         List<GUIElement> menuElements;
+        List<GUIElement> instructElements;
         GameObject playerSphere;
         Dictionary<String, Scene> scenes;
         Scene currentScene;
@@ -36,6 +38,8 @@ namespace FinalProject
         int bulletCount = 0;
         int maxBullets = 20;
         int Wave = 1;
+        int HighScore = 0;
+        SoundEffect music;
         public FinalProject()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -60,15 +64,35 @@ namespace FinalProject
 
             scenes.Add("Menu", new Scene(MainMenuUpdate, MainMenuDraw));
             scenes.Add("Play", new Scene(MainGameUpdate, MainGameDraw));
+            scenes.Add("Instructions", new Scene(InstructionsUpdate, InstructionsDraw));
             currentScene = scenes["Menu"];
             // TODO: use this.Content to load your game content here
             cube = Content.Load<Model>("cube");
             sphere = Content.Load<Model>("Sphere");
             font = Content.Load<SpriteFont>("Font");
             square = Content.Load<Texture2D>("Square");
+            music = Content.Load<SoundEffect>("zodikremixed2");
             LoadMenu();
             LoadLevel();
+            LoadInstructions();
+            SoundEffectInstance loopedMusic = music.CreateInstance();
+            loopedMusic.IsLooped = true;
+            loopedMusic.Play();
+            
             //gos.Add(playerSphere);
+        }
+        private void InstructionsUpdate() { foreach (var a in instructElements) a.Update(); }
+        private void InstructionsDraw()
+        {
+            GraphicsDevice.Clear(Color.AntiqueWhite);
+            _spriteBatch.Begin();
+            foreach (var a in instructElements) a.Draw(_spriteBatch, font);
+            _spriteBatch.DrawString(font, "Objective: Survive for as long as possible while killing enemies!" + "\nEach Red sphere has a chance to drop an upgrade"+ "\nThe Upgrade's effect depends on its color:"
+                + "\n    Green heals one health\n    Orange gives you one additioal max health point\n    Yellow gives you one additional bullet you can shoot at a time\n" +
+                "Once all red spheres are gone, a new wave starts with an additional enemy\nEach enemy you kill increases your score, but each enemy that makes\n" +
+                "it to the center reduces your health.\nControls: Press the space bar to shoot one bullet. The bullet will travel towards the purple sphere.\n    Holding the space bar" +
+                "will drag upgrades toward the center. \n    You must bring the upgrades to the center before they disappear to get their effect.", new Vector2(50, 50), Color.Black);
+            _spriteBatch.End();
         }
         private void MainMenuUpdate()
         {
@@ -85,7 +109,20 @@ namespace FinalProject
             {
                 a.Draw(_spriteBatch, font);
             }
+            _spriteBatch.DrawString(font, "High Score: " + HighScore, new Vector2(400, 100), Color.Black);
+            _spriteBatch.DrawString(font, "Exiled Zone", new Vector2(400, 50), Color.Black,0,Vector2.Zero,3f,SpriteEffects.None,0);
+            _spriteBatch.DrawString(font, "Music: Lord of Zorg, driz, future travel and TimeQ (Zodik remixed) by glitchart\nhttps://opengameart.org/content/lord-of-zorg-driz-future-travel-and-timeq-zodik-remixed", new Vector2(50, 350), Color.Black);
             _spriteBatch.End();
+        }
+        private void LoadInstructions()
+        {
+            instructElements = new List<GUIElement>();
+            Button b = new Button();
+            b.Texture = square;
+            b.Text = "Back";
+            b.Bounds = new Rectangle(50, 300, 300, 20);
+            b.Action += ChangeInstructionsToMenu;
+            instructElements.Add(b);
         }
         private void LoadMenu()
         {
@@ -94,17 +131,33 @@ namespace FinalProject
             Button b = new Button();
             b.Texture = square;
             b.Text = "Start";
-            b.Bounds = new Rectangle(50, 50, 300, 20);
+            b.Bounds = new Rectangle(50, 75, 300, 20);
             b.Action += ChangeMenuToLevel;
             menuElements.Add(b);
+            b = new Button();
+            b.Texture = square;
+            b.Text = "Instructions";
+            b.Bounds = new Rectangle(50, 100, 300, 20);
+            b.Action += ChangeMenuToInstructions;
+            menuElements.Add(b);
+        }
+        private void ChangeMenuToInstructions(GUIElement g)
+        {
+            currentScene = scenes["Instructions"];
         }
         private void ChangeMenuToLevel(GUIElement g)
         {
             LoadLevel();
             currentScene = scenes["Play"];
         }
+        private void ChangeInstructionsToMenu(GUIElement g)
+        {
+            LoadMenu();
+            currentScene = scenes["Menu"];
+        }  
         private void ChangeLevelToMenu()
         {
+            if(Score > HighScore) {  HighScore = Score; }
             LoadMenu();
             currentScene = scenes["Menu"];
         }
@@ -126,7 +179,7 @@ namespace FinalProject
             effect.Parameters["NormalMap"].SetValue(terrain.NormalMap);
             camera = new Camera();
             camera.Transform = new Transform();
-            camera.Transform.Position = Vector3.Up * 50;
+            camera.Transform.Position = Vector3.Up * 40;
             camera.Transform.Rotate(Vector3.Right, -MathHelper.PiOver2);
             light = new Light();
             Score = 0;
@@ -155,7 +208,6 @@ namespace FinalProject
             agents.Add(agent);
            
         }
-
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
@@ -166,7 +218,6 @@ namespace FinalProject
             currentScene.Update();
             base.Update(gameTime);
         }
-
         private void MainGameUpdate()
         {
             if(Health < 0)
@@ -298,13 +349,11 @@ namespace FinalProject
             healthBar.MaxValue = MaxHealth;
             healthBar.Update();
         }
-
         protected override void Draw(GameTime gameTime)
         {
             currentScene.Draw();
             base.Draw(gameTime);
         }
-
         private void MainGameDraw()
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
