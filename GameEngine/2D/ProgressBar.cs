@@ -16,7 +16,7 @@ namespace CPI311.GameEngine
             }
             set 
             { 
-                _value = Math.Clamp(value, 0f, MaxValue); 
+                _value = Math.Clamp(value, 0f, MaxValue);
             } 
         }
         public float MaxValue { get; set; }
